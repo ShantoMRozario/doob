@@ -1,6 +1,7 @@
 
 // Dark Mode
 const mode = document.querySelector("#mode");
+const m_mode = document.querySelector("#m_mode");
 const logo = document.querySelector("#main_logo");
 const f_logo = document.querySelector("#footer_logo");
 mode.onclick = function(){
@@ -12,6 +13,19 @@ mode.onclick = function(){
         f_logo.src = "images/logo-light.png"
     } else {
         mode.src = "images/dark.svg "
+        logo.src = "images/logo-dark.png "
+        f_logo.src = "images/logo-dark.png "
+    }
+}
+m_mode.onclick = function(){
+    document.body.classList.toggle("dark_theme")
+
+    if (document.body.classList.contains("dark_theme")) {
+        m_mode.src = "images/light.svg"
+        logo.src = "images/logo-light.png"
+        f_logo.src = "images/logo-light.png"
+    } else {
+        m_mode.src = "images/dark.svg "
         logo.src = "images/logo-dark.png "
         f_logo.src = "images/logo-dark.png "
     }

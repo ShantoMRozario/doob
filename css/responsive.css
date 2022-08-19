@@ -1,6 +1,9 @@
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@ EXTRA SMALL DEVICE @@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
 @media(max-width:991.98px){
 
     /* Common  start */
@@ -31,6 +34,11 @@
     #navbar{
         background: #f5f8fa;
     }
+    body.dark_theme #navbar{
+      background: #010102;
+      
+  }
+  
     #navbar ul li a {
         color: #65676b;
       }
@@ -318,6 +326,19 @@
 
 
 }
+@media(min-width:320px) and (max-width:387.98px){
+  .navbar-brand {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
